@@ -1,0 +1,13 @@
+{
+  "name": "fxpm-agent",
+  "version": "0.1.0",
+  "description": "FXPM Agent to manage FXServer instances on a host.",
+  "main": "src/index.js",
+  "author": "FXPM",
+  "license": "MIT",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "prompt": "^1.0.0",
+    "winston": "^3.0.0-rc1"
+  }
+}
