@@ -27,11 +27,13 @@ module.exports = {
     });
   },
 
+  /**
+    * Setup the FXPM.Config with default values. These can be set manually,
+    * or you will be prompted to provide some of the data on first run.
+    * TODO: Make this check for missing settings and request that the user 
+    * set them, rather than relying solely on manager.host config item.
+    */
   async startConfig() {
-    /**
-     * Launch the FXPM.Config with default values. These can be set manually,
-     * or you will be prompted to provide some of the data on first run.
-     */
     const adapter = new FileSync(FXPM.RootDir + '/config.json');
     FXPM.Config = Low(adapter);
     FXPM.Config.defaults({
